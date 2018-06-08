@@ -2,7 +2,7 @@
 
 ## Python dependencies
 ```
-numpy, cv2, urllib, firebase, BeautifulSoup4
+numpy, cv2, urllib, BeautifulSoup4
 ```
 
 ## Crawling location-id nearby a coordinate
