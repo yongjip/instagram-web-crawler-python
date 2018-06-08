@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "placenessdb",
+  "private_key_id": "d90d4c84671f5fec8ea32d5c7a75d0784e6f0ef6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDk49n2FuCMpY/T\nlzSAly3rYhIzs9oq4SQk3zvCy+X5v1gGn1aPco5XLZL4xGAOazDAdIePkF76AoYD\nV4EJFZWmqr+Po9D/0p/z+3OPd7mvpO5q1SJniz8nzfCp9RgyqS7uDw2PeCYm4Hlm\nv6MJRHL0nDpM9wNa7wHJX1jKsIJCdwxtRfbXQK0LQRlIUt43QSPijpEdY32F9sTd\ncSQpTbVJotM7v0efAlTbhdk5WffIHM+evSTphAf5yBwG4DcDCH867tCFRAQjcmAf\nC0ExByrZ3I1fqzq+xQNphmwfxTssTdLPbShyPu61ZXeQHgSowxvYynejKBsbp61Y\nWRLrT+Z/AgMBAAECggEAGuyGbgEg5spu0afeoCWoXCDMHVLRneuf0cqEgBR199u/\nIgBKMVN7VNvihuqqleeb83eBnqyPz37OfsQjRItKcDFzmRTe98ix0gRJAp5FtFiF\nRwHNKzrg8fCyl3tiHktyXsRchvzOGBKdlS2DowpvL0DVRspjlaW5oxNZIXaDzAd1\n84sPE3bMAv+KdOLyBAmaqbUDXjOZ8Z4P+PoC1XFfBXIXbcUR1ABsv30/wVtrOxEF\nfNgBpM0pz3wJM8L/wCXT2gKagDvGJvU7oXH+bGY0SjYX5vSRSXkNAYgWilTSCO13\nRjFH2NLjYn5qO4LvUuAy+bbJy9+iGiTEK/XILa7X0QKBgQD3XWDBJQZbEEoxmAKm\np0LFlpI6BjBFFteKP1cug4K0qSdpjDbajYkyQYRUvc4IvrVLu06CvT7bO/F3V86B\nOKWwj9Ld8Gw6xSoNW5//5SIr1r53eV99jg6ETf5SMDLD5NKneykzGUerEkJc/WVJ\n5OZT7zLTijgDqKd6a2s0i2krVwKBgQDs4V7lcs4L6xseqriXxDWJY/B7gzn9cxLS\npGlVNHsONwsKlS62KBRS/Qg3pwsRQgx5TK9W7hyCB/8zWhVYki3OtP1yGvXtNWQI\nSePv5AhOdwihI4yFCMkkuro1rwmBFXyOqlrv3V/tv7PdxZcx6+TSebj/fzQ8L0LN\nt3/HnJrNGQKBgQCtgrBliqUEp06Drw7c+yIZGt8DGGgvbjBOZtOuasz6EFT28kVf\n1DvSJqa+Ek09URg2QPJ3PmuiuE9N2See+K8wRBIzX3trVfWDXSvEAWOQwJblkxtq\nJIUGRPcJi4lwY0dn9zoU/7yHwM0QESZFSOxPH8/VFnToDBs+Aa83MjrZDQKBgHL/\nVlp9yZnvoVLZ/pNvJa51XiIYKuboHpM0Tg6XU8Yq4qlYkzzLaFKBlKOv7KeMMRIS\nMG07W4uk5je/2+0LykE3jHMAs7Nc4BtGA+pKAd5V21KfN3C+OyghnpTBTRPlonqA\nKXWZOyDomCFp82TA6G1lunIPBwTQzNWh5964IE7BAoGBANezJyaLfllrNUaHp7bu\nkASe4iVkA/sorsEicJZhiYfOL9HWMLyR5H+Zs0Ir+fIsXVrg4s3HG4ZwAzK3enhX\nAvK92lVOi+ru7e1+5VwFBiDP89M3NKyUA+jF+xxT1uDMLs4ls9FeonYJsoqHDBZS\nvaoy5Cne72qefJKREr2bG7Yd\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-service-account@placenessdb.iam.gserviceaccount.com",
+  "client_id": "111540523671301380477",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-service-account%40placenessdb.iam.gserviceaccount.com"
+}

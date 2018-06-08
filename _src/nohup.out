@@ -1,0 +1,138 @@
+ * Running on http://0.0.0.0:6706/ (Press CTRL+C to quit)
+ * Running on http://0.0.0.0:6705/ (Press CTRL+C to quit)
+[2017-02-06 17:08:31,960] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "instagram_locationid_6706.py", line 25, in main
+    url = 'https://api.instagram.com/v1/locations/search?lat='+lat+'&lng='+lng+'&access_token='+token+'&distance='+distance
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+192.249.29.53 - - [06/Feb/2017 17:08:31] "GET / HTTP/1.1" 500 -
+192.249.29.53 - - [06/Feb/2017 17:08:32] "GET /favicon.ico HTTP/1.1" 404 -
+192.249.29.53 - - [06/Feb/2017 17:08:56] "GET /?lng=123.3231&lat=42.234 HTTP/1.1" 200 -
+192.249.29.53 - - [06/Feb/2017 17:11:10] "GET /?lng=127.0549843&lat=37.5130619 HTTP/1.1" 200 -
+/usr/local/lib/python2.7/dist-packages/bs4/__init__.py:166: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+To get rid of this warning, change this:
+
+ BeautifulSoup([your markup])
+
+to this:
+
+ BeautifulSoup([your markup], "lxml")
+
+  markup_type=markup_type))
+[2017-02-06 17:12:06,169] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "instagram_web_crawl_6705.py", line 13, in main
+    return realtime_instagram(request.args.get('locationid'), request.args.get('max_id'))
+  File "instagram_web_crawl_6705.py", line 37, in realtime_instagram
+    json_data = json.loads(json_text)['nodes']
+  File "/usr/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 369, in decode
+    raise ValueError(errmsg("Extra data", s, end, len(s)))
+ValueError: Extra data: line 1 column 11791 - line 1 column 11920 (char 11790 - 11919)
+192.249.29.53 - - [06/Feb/2017 17:12:06] "GET /?locationid=240493878 HTTP/1.1" 500 -
+192.249.29.53 - - [06/Feb/2017 17:12:06] "GET /favicon.ico HTTP/1.1" 404 -
+[2017-02-06 17:13:19,920] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "instagram_web_crawl_6705.py", line 13, in main
+    return realtime_instagram(request.args.get('locationid'), request.args.get('max_id'))
+  File "instagram_web_crawl_6705.py", line 37, in realtime_instagram
+    json_data = json.loads(json_text)['nodes']
+  File "/usr/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 369, in decode
+    raise ValueError(errmsg("Extra data", s, end, len(s)))
+ValueError: Extra data: line 1 column 11791 - line 1 column 11810 (char 11790 - 11809)
+192.249.29.53 - - [06/Feb/2017 17:13:19] "GET /?locationid=240493878 HTTP/1.1" 500 -
+[2017-02-06 17:13:47,596] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "instagram_web_crawl_6705.py", line 13, in main
+    return realtime_instagram(request.args.get('locationid'), request.args.get('max_id'))
+  File "instagram_web_crawl_6705.py", line 37, in realtime_instagram
+    json_data = json.loads(json_text)['nodes']
+  File "/usr/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 369, in decode
+    raise ValueError(errmsg("Extra data", s, end, len(s)))
+ValueError: Extra data: line 1 column 11791 - line 1 column 12729 (char 11790 - 12728)
+192.249.29.53 - - [06/Feb/2017 17:13:47] "GET /?locationid=240493878 HTTP/1.1" 500 -
+[2017-02-06 17:13:57,338] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "instagram_web_crawl_6705.py", line 13, in main
+    return realtime_instagram(request.args.get('locationid'), request.args.get('max_id'))
+  File "instagram_web_crawl_6705.py", line 37, in realtime_instagram
+    json_data = json.loads(json_text)['nodes']
+  File "/usr/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 369, in decode
+    raise ValueError(errmsg("Extra data", s, end, len(s)))
+ValueError: Extra data: line 1 column 15516 - line 1 column 15613 (char 15515 - 15612)
+192.249.29.53 - - [06/Feb/2017 17:13:57] "GET /?locationid=138200 HTTP/1.1" 500 -
+[2017-02-27 15:27:29,146] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "instagram_locationid_6706.py", line 25, in main
+    url = 'https://api.instagram.com/v1/locations/search?lat='+lat+'&lng='+lng+'&access_token='+token+'&distance='+distance
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+143.248.232.63 - - [27/Feb/2017 15:27:29] "GET / HTTP/1.1" 500 -
+143.248.232.63 - - [27/Feb/2017 15:27:29] "GET /favicon.ico HTTP/1.1" 404 -

@@ -132,9 +132,9 @@ def crawl_single_locationid(output, locationid, maxid):
         print result, maxid
 
 
-    #########################################################################
-    # store location id here: ex) db.patch(locationid, json.dumps(result)) #
-    #########################################################################
+    ##########################################################################################
+    # store (location-id, post) key value here: ex) db.patch(locationid, json.dumps(result)) #
+    ##########################################################################################
 
     return maxid
          
