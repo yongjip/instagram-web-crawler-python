@@ -1,8 +1,8 @@
+#-*- coding: utf-8 -*-
+
 # Author: mania@kaist.ac.kr
 # Crawling instagram web from given location id
-# todo (sskim): iteration, multi-threading
-
-#-*- coding: utf-8 -*-
+# todo : multi-threading
 
 import urllib
 import json
@@ -57,8 +57,6 @@ def iter_webcrawl(locationid, max_id):
         return;
 
     res_tot={}
-
-    #print json_data
 
     if json_data == None or len(json_data) == 0:
         print "Crawler: No data found. Possibly end of data"
@@ -116,7 +114,6 @@ def iter_webcrawl(locationid, max_id):
         except:
             print "likes MISSING"
 
-
         res_tot[res['id']] = res
         last_id = res['id']
 
@@ -129,32 +126,15 @@ def iter_webcrawl(locationid, max_id):
 
 
 def crawl_single_locationid(output, locationid, maxid):
-    #print locationid
-    print maxid
-    
     result, maxid = iter_webcrawl(locationid, maxid)
 
     if (output=="print"):
-        print result
-        print maxid
+        print result, maxid
 
-    elif (output=="firebase"):
-        #print "firebase"
-        dat_db = dbhandler.firebase('https://placenessdb3.firebaseio.com/')
-        try:
-            if (locationid == ''):
-                print "Error: location ID null!"
-            else:
-                dat_db.patch('locationdata/'+locationid +'/' , json.dumps(result))
-        except:
-            print "Error: DB write error"
 
-        if result != None:
-            for post in result:
-                #print result[post]
-                imagehandler.upload(result[post]["display_src"], str(locationid), result[post]["id"])
-        else:
-            return None
+    #########################################################################
+    # store location id here: ex) db.patch(locationid, json.dumps(result)) #
+    #########################################################################
 
     return maxid
          
@@ -181,13 +161,6 @@ def main(argv):
             max_id = crawl_single_locationid("print", argv[1], max_id);
 
         print "end of iteration"
-
-
-    elif (argv[0]=="firebase"):
-        print "qwer"
-        
-    elif (argv[0]=="aws"):
-        print "asdf"
 
 if __name__ == "__main__":
     main(sys.argv[1:])
