@@ -4,18 +4,8 @@ import operator
 import urllib
 import httplib, base64
 
-
-
 _url = 'https://api.projectoxford.ai/vision/v1.0/analyses'
-
-#_key = '82f3862aa88f4adf860a0aea6591101a'
-#_key = 'df2c89e48b38487b80f42f7be296fad9'
-
-#_key = 'b9d7d851b41b47e8a46f90012b0addd4'
-_key = '07f20944aff5406f84ae0d9d2692c807'
-
-
-#_key= 'dc97192358904022a2bbce7d3d83d5ad'
+_key = ''
 
 _maxNumRetries = 10
 
